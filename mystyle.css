@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    row-gap: 10px;
+
+    p {
+        min-width: 300px;
+        flex-basis: calc(100% / 3);
+    }
+
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+        flex-basis: 100%;
+    }
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+
+    .moto,
+    .pages,
+    .socials {
+        flex: 1;
+        min-width: 250px;
+    }
+
+    .moto {
+        font-size: 2.5rem;
+        line-height: 4rem;
+        text-align: center;
+    }
+
+    .pages {
+        flex-grow: 2;
+        align-self: center;
+
+        ul {
+            align-self: center;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: center;
+            row-gap: 10px;
+
+            li {
+                width: 50%;
+            }
+        }
+    }
+
+    .socials {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+@media screen and (max-width:425px) {
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 10px;
+
+        p {
+            min-width: 300px;
+            flex-basis: calc(100% / 3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            flex-basis: 100%;
+        }
+    }
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        
+
+        .moto,
+        .pages,
+        .socials {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .moto {
+            font-size: 2.5rem;
+            line-height: 4rem;
+            text-align: center;
+        }
+
+        .pages {
+            flex-grow: 2;
+            align-self: center;
+            flex-direction: column;
+
+            ul {
+                align-self: center;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                row-gap: 10px;
+
+                li {
+                    width: 50%;
+                }
+            }
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+
+    header {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        row-gap: 10px;
+
+        p {
+            min-width: 300px;
+            flex-basis: calc(100% / 3);
+        }
+
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            flex-basis: 100%;
+        }
+    }
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+    
+
+        .moto,
+        .pages,
+        .socials {
+            flex: 1;
+            min-width: 250px;
+        }
+
+        .moto {
+            font-size: 2.5rem;
+            line-height: 4rem;
+            text-align: center;
+        }
+
+        .pages {
+            flex-grow: 2;
+            align-self: center;
+
+            ul {
+                align-self: center;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+                row-gap: 10px;
+
+                li {
+                    width: 50%;
+                }
+            }
+        }
+
+        .socials {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            a {
+                text-decoration: none;
+            }
+        }
+
+    }
+}
